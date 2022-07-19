@@ -23,6 +23,7 @@ public class JdbcTemplateItemRepositoryV1 implements ItemRepository {
     @Override
     public Item save(Item item) {
         String sql = "insert into item(item_name,price,quantity) values(?,?,?)";
+        KeyHolder keyHolder = new GeneratedKeyHolder();
         return null;
     }
 
